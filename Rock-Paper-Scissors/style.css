@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* body{
+    background-color: rgb(144, 143, 131);
+} */
+
+h1{
+    background-color: blue;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 50px;
+    
+}
+
+.choice{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+img{
+    height: 190px;
+    width: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+}
