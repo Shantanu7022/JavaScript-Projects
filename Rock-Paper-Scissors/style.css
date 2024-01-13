@@ -35,7 +35,7 @@ h1{
 }
 .choice:hover{
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 img{
@@ -43,4 +43,21 @@ img{
     width: 190px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.score-board{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.score{
+    color: rgb(255, 255, 255);
+    background-color:darkblue;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
 }
