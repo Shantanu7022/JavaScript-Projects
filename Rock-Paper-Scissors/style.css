@@ -54,10 +54,30 @@ img{
     margin-bottom: 50px;
 }
 
-.score{
+/* .score{
     color: rgb(255, 255, 255);
     background-color:darkblue;
     height: 50px;
     width: 150px;
-    font-size: 21px;
+    font-size: 20px;
+} */
+
+#user-score, #comp-score{
+    font-size: 35px;
 }
+
+#user, #comp{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(136, 6, 58);
+}
+
+#msg{
+    background-color: rgb(121, 2, 129);
+    color: rgb(241, 239, 234);
+    display: inline;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
