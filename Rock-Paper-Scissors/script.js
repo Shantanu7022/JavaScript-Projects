@@ -2,6 +2,7 @@
  let computerScore = 0;
 
  const choices = document.querySelectorAll(".choice");
+ const msg = document.querySelector("#msg");
 
  const generateCompChoice = () => {
     let options = ["rock", "paper", "scissors"];
@@ -9,16 +10,22 @@
     return options[randomIndex];
  };
 
- const showWinner = (userWin) => {
+ const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin){
         console.log("YOU Win!");
+        msg.innerText = `Congratulations! You Win! Your ${userChoice} beats ${compChoice}`;
+        msg.style.backgroundColor = "green"
     }else{
         console.log("YOU Lose!");
+        msg.innerText = `You lost the game! ${compChoice} beats your ${userChoice}`;
+        msg.style.backgroundColor = "red"
     }
  }
 
- const drawGame = () => {
+ const drawGame = (userChoice, compChoice) => {
     console.log("Game was draw");
+    msg.innerText = `Game was draw... Play again! You choose ${userChoice} & Computer also choose ${compChoice}`
+    msg.style.backgroundColor = "rgb(121, 2, 129)"
  }
 
 const playGame = (userChoice) =>  {
@@ -29,7 +36,7 @@ const playGame = (userChoice) =>  {
 
     if(userChoice === compChoice){
         //game draw
-        drawGame();
+        drawGame(userChoice, compChoice);
     }else{
         let userWin = true;
         if(userChoice === "rock"){
@@ -40,7 +47,7 @@ const playGame = (userChoice) =>  {
             userWin = compChoice === "rock" ? false : true;  //rock or paper
         }
 
-        showWinner(userWin);
+        showWinner(userWin, userChoice, compChoice);
     }
 };
 
