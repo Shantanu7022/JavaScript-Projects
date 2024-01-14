@@ -8,23 +8,23 @@
     background-color: rgb(144, 143, 131);
 } */
 
-h1{
+h1 {
     background-color: blue;
     color: white;
     height: 60px;
     line-height: 60px;
 }
 
-.choices{
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 90px;
     margin-top: 50px;
-    
+
 }
 
-.choice{
+.choice {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -33,19 +33,20 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.choice:hover{
+
+.choice:hover {
     cursor: pointer;
     opacity: 0.6;
 }
 
-img{
+img {
     height: 190px;
     width: 190px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.score-board{
+.score-board {
     display: flex;
     gap: 100px;
     justify-content: center;
@@ -62,17 +63,19 @@ img{
     font-size: 20px;
 } */
 
-#user-score, #comp-score{
+#user-score,
+#comp-score {
     font-size: 35px;
 }
 
-#user, #comp{
+#user,
+#comp {
     font-size: 25px;
     font-weight: bold;
     color: rgb(136, 6, 58);
 }
 
-#msg{
+#msg {
     background-color: rgb(121, 2, 129);
     color: rgb(241, 239, 234);
     display: inline;
@@ -80,4 +83,3 @@ img{
     padding: 15px;
     border-radius: 15px;
 }
-
