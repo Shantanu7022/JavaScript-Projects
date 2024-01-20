@@ -30,7 +30,7 @@ const showWinner = (userWin, userChoice, compChoice) => {
 
 const drawGame = (userChoice, compChoice) => {
     //console.log("Game was draw");
-    msg.innerText = `Game was draw... Play again! You choose ${userChoice} & Computer also choose ${compChoice}`
+    msg.innerText = `Game was draw... Play again!`
     msg.style.backgroundColor = "rgb(121, 2, 129)"
 }
 
