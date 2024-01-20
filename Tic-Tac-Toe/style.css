@@ -61,6 +61,11 @@ body{
     
 }
 
+h2{
+    font-size: 30px;
+    color: #581401;
+}
+
 #reset:hover{
     background-color: rgb(0, 0, 7);
     color: white;
